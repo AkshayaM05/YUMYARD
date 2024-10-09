@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - YumYard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="recipes.html"><i class="fas fa-utensils"></i>Recipes</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <div class="container">
+            <center>
+            <h1 style="color:white">Login</h1>
+            <form action="login.php" method="post">
+                <label for="username">Username (Email):</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <input type="submit" value="Login">
+            </form>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

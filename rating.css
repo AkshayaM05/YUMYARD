@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://media.istockphoto.com/id/487077896/photo/close-up-of-fast-food-snacks-and-drink-on-table.jpg?s=612x612&w=0&k=20&c=kjSfS7tuG1pQAg6_FvBeji-l3pgQ3DckRS4wpsC8lCY='); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f7d106;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.right-corner-image {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 150px;
+    height: auto;
+}

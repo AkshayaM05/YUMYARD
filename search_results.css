@@ -1,0 +1,117 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+}
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.search-container h2 {
+    margin-bottom: 20px;
+}
+
+.search-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+
+.search-results-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.search-results-container h2 {
+    margin-bottom: 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Set link color to white */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline the links on hover */
+}
+.right-corner-image {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    background-color:black; /* Set background color to black to see white text clearly */
+    text-align: center;
+    padding: 15px;
+}

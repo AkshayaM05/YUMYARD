@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Add your CSS styles here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i1.adis.ws/i/canon/pro-inside-professional-food-photography-1_46a998f373b44dc583ee52d9448ece04?$media-collection-full-dt-jpg$'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2 {
+    color:white;
+}
+.brand-name {
+    color:white;
+    font-weight: bold;
+}
+p {
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+    color: white; /* Change paragraph text color to white */
+}
+li {
+    color: white; /* Change list item text color to white */
+}
+.image-scroll-container {
+    overflow: hidden;
+}
+.scrolling-image {
+    width: 500px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-repeat: no-repeat; 
+    animation: scroll-left 10s linear infinite; /* Adjust animation duration and timing function as needed */
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position */
+    }
+}

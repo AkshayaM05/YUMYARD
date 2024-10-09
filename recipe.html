@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YumYard Recipe Book</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: whitesmoke;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .recipe-card {
+            margin: 10px;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-card img {
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            background-color: aliceblue;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .add-recipe-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-recipe-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://static.vecteezy.com/system/resources/previews/027/865/586/non_2x/set-of-restaurant-doodles-food-and-drinks-on-black-background-vector.jpg'); /* Replace 'background.jpg' with your image file */
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+    <div>
+        <h1>YumYard Recipe Book</h1>
+        <div class="container">
+            <div class="recipe-card">
+                <h2>Chicken Biryani</h2>
+                <img src="https://lh3.googleusercontent.com/9x2dhaEEhSIq7cMzHLGK8rhC5RIkrdPGIXSlzif18uYkIanQCPOPk8ePyhTnJYi1bumEoRRMG_JMtCDM-IuND8EFjGoa55GAapHS-Sgf9w" alt="Chicken Biryani" width="200">
+                <p>Happiness is a plate full of Chicken biryani.</p>
+                <a href="biryani.html">Click for Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <h2>Italian Spaghetti</h2>
+                <img src="https://img.freepik.com/free-photo/spaghetti-pasta-wooden-bowl-with-tomato-sauce-dark-background_1150-26511.jpg?size=626&ext=jpg&ga=GA1.2.1542708100.1718217600&semt=sph" alt="Spaghetti Carbonara" width="200">
+                <p>Savoring every bite of this delicious spaghetti.</p>
+                <a href="spaghetti.html">Click for Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <h2>Mexican Pizza</h2>
+                <img src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg.transform/576x300/image.jpg" alt="Pizza" width="200">
+                <p>Pizza is the only love triangle I want.</p>
+                <a href="pizza.html">Click for Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <h2>Naan Paneer Butter Masala</h2>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/a6/9d/56/paneer-butter-masala.jpg" alt="Paneer Butter Masala" width="200">
+                <p>Indian bread is just a name But Naan is an emotion.</p>
+                <a href="naan.html">Click for Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <h2>Grilled Chicken</h2>
+                <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2645,w_2550,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/0717-eat-savor-big-s-chicken-rotated_og06jr.jpg" alt="Paneer Butter Masala" width="200">
+                <p>Grill it, thrill it,Keep calm and BBQ on!</p>
+                <a href="grillchicken.html">Click for Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <h2>Parotta</h2>
+                <img src="https://i.pinimg.com/originals/28/6a/ed/286aedcacad6d3836b928133cb7e98df.jpg" alt="Paneer Butter Masala" width="200">
+                <p> Artistry in layers, simplicity in every bite.</p>
+                <a href="parotta.html">Click for Recipe</a>
+            </div>
+        </div>
+    
+    <button class="add-recipe-button" onclick="window.location.href='addingrecipe.html'">Add Recipe</button>
+
+    </div>
+</body>
+</html>

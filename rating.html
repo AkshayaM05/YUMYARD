@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YumYard - Rating</title>
+    <link rel="stylesheet" href="rating.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\akshaya\Documents\YumYard\logo.png" alt="Image" class="right-corner-image">
+    </header>
+    <div class="container">
+        <form action="rating.php" method="post">
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+            </div>
+            <input type="hidden" name="recipe_id" value="1"> <!-- Replace with the actual recipe ID -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

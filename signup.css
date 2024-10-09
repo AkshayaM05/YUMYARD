@@ -1,0 +1,117 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    background-image: url('https://i.pinimg.com/originals/e1/2a/8e/e12a8ea15dc3cf40777ea8d7b01142d2.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Set link color to white */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+
+header {
+    
+        background-color:black; /* Set background color to black to see white text clearly */
+        text-align: center;
+        padding: 10px;
+    }
+    .right-corner-image {
+        float: right;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 15px;
+}
+
+p a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

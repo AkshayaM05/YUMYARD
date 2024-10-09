@@ -1,0 +1,291 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>YumYard Recipe Book</title> 
+    <style> 
+       body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+    opacity: 0.9; /* Optional for text visibility */
+}
+
+header { 
+    background-color: rgba(255, 111, 97, 0.8); /* Add some transparency to the header for better visibility over background */
+    padding: 5px; 
+    color: white; 
+    text-align: center; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+} 
+
+
+        nav a { 
+            color: white; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        } 
+
+        nav a:hover { 
+            text-decoration: underline; 
+        } 
+
+        section { 
+            border: 2px solid #ff6f61; 
+            border-radius: 10px; 
+            background-color: white; 
+            padding: 20px; 
+            margin: 20px 0; 
+            width: 100%; 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+            box-sizing: border-box; 
+        } 
+
+        /* Set a container to ensure consistent layout */ 
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        } 
+
+        .recipe-images img { 
+            width: 150px; 
+            height: 150px; 
+            margin: 10px; 
+            cursor: pointer; 
+        } 
+
+        footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 5px; /* Reduced from 10px to 5px */
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+footer a {
+    color: white; 
+    margin: 0 5px; /* Reduced margin for links */
+    text-decoration: none; 
+    font-size: 14px; /* Optional: Reduce font size */
+}
+
+footer a img {
+    width: 20px; /* Reduced icon size from 24px to 20px */
+    height: 20px; /* Reduced icon size from 24px to 20px */
+    vertical-align: middle; 
+}
+
+
+        /* Modal styling */ 
+        .modal { 
+            display: none; 
+            position: fixed; 
+            z-index: 999; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.8); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        } 
+
+        .modal-content { 
+            background-color: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            width: 30%; 
+            min-height: 400px; 
+            position: relative; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+        } 
+
+        .close { 
+            color: #aaa; 
+            position: absolute; 
+            top: 10px; 
+            right: 15px; 
+            font-size: 28px; 
+            font-weight: bold; 
+        } 
+
+        .close:hover, 
+        .close:focus { 
+            color: black; 
+            text-decoration: none; 
+            cursor: pointer; 
+        } 
+
+        /* Sign-up form styling inside modal */ 
+        form input[type="text"], form input[type="email"], form input[type="password"] { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            box-sizing: border-box; 
+        } 
+
+        form input[type="submit"] { 
+            background-color: #ff6f61; 
+            color: white; 
+            border: none; 
+            padding: 10px; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+
+        form input[type="submit"]:hover { 
+            background-color: #e65b55; 
+        } 
+
+        /* Paragraph font style */ 
+        p { 
+            font-family: 'Georgia', serif; /* Change the font style to Georgia */ 
+            font-size: 16px; /* Adjust the font size */ 
+            line-height: 1.6; /* Increase line spacing for better readability */ 
+        }
+    </style> 
+</head> 
+<body> 
+
+    <header> 
+        <nav> 
+            <h1>YumYard-The Recipe Book</h1> 
+            <a href="#home">Home</a> 
+            <a href="#recipe-book">Recipe Books</a> 
+            <a href="#about">About</a> 
+            <a href="#contacts">Contact</a> 
+        </nav> 
+    </header> 
+
+    <div class="container"> 
+        <!-- Home Section --> 
+       <!-- Home Section --> 
+<section id="home"> 
+    <h2>Welcome to YumYard</h2> 
+    <p>Welcome to YumYard, your go-to hub for discovering and sharing delicious recipes! Whether you're a pro or a beginner, our easy-to-follow guides ensure culinary success. Explore, rate, comment, and share your own creations in our vibrant community. Let YumYard spark your next tasty dish!</p> 
+
+    <!-- Promotional Content -->
+    <div style="border: 2px solid #ff6f61; background-color: #fff8e1; padding: 20px; margin: 20px 0; border-radius: 10px; text-align: center;">
+        <h3 style="color: #ff6f61;">🔥 <strong>Get a FREE Recipe Book!</strong> 🍽️</h3>
+        <p>Join YumYard today and unlock 50+ mouthwatering dishes! 🎉 Enjoy exclusive discounts, early access to new recipes, and more. 🍲 Let the cooking adventure begin—delicious meals await! 😋👩‍🍳</p>
+        <button onclick="openSignupModal()" style="background-color: #ff6f61; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-size: 16px;">Sign Up Now</button>
+    </div>
+</section>
+
+        <!-- Recipe Book Section --> 
+        <section id="recipe-book"> 
+            <h2>Recipe Book</h2> 
+            <p>Click on the images to sign up and view more!</p> 
+            <div class="recipe-images"> 
+                <img src="https://www.justspices.co.uk/media/recipe/Egg-Fried-Noodles_Just-Spices.webp" alt="Noodles" onclick="openSignupModal()"> 
+                <img src="https://img-global.cpcdn.com/recipes/c05528ae66f0dfc0/680x482cq70/bun-parotta-recipe-main-photo.jpg" alt="parotta" onclick="openSignupModal()"> 
+                <img src="https://recipes.net/wp-content/uploads/2023/05/air-fryer-chicken-biryani-recipe_6968eb6ab4a5ae22d136dab86c9ea8af.jpeg" alt="biryani" onclick="openSignupModal()"> 
+                <img src="https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-Featured-1.jpg" alt="panner tikka" onclick="openSignupModal()"> 
+                <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/11/Chettinad-Chicken-2.jpg" alt="Chicken Curry" onclick="openSignupModal()"> 
+                <img src="https://static.toiimg.com/thumb/60511581.cms?imgsize=346026&width=800&height=800" alt="Dosai" onclick="openSignupModal()"> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_UQ4YdPmSLfAAdR9SPxvgsPWx0Fb7xagNDA&s" alt="pasta" onclick="openSignupModal()"> 
+                <img src="https://www.thetakeiteasychef.com/wp-content/uploads/2017/12/KFF-FI1-Compressed.jpg" alt="Fish Fry" onclick="openSignupModal()"> 
+            </div> 
+        </section> 
+
+        <!-- About Section --> 
+        <!-- About Section -->
+<section id="about">
+    <h2>About YumYard</h2>
+    <p>YumYard is a platform for food lovers to discover, share, and explore the world of recipes. Whether you're a seasoned chef or a beginner, you'll find something to tantalize your taste buds!</p>
+    
+    <!-- Features List -->
+    <h3>Why Choose YumYard?</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        <li>🍽️ <strong>Extensive Recipe Collection</strong></li>
+        <li>📝 <strong>Step-by-Step Guides</strong></li>
+        <li>⭐ <strong>User Reviews & Ratings</strong></li>
+        <li>🤝 <strong>Recipe Sharing</strong></li>
+        <li>🎯 <strong>Personalized Recommendations</strong></li>
+        <li>💰 <strong>Time and Money Saver</strong></li>
+        <li>💬 <strong>Vibrant Cooking Community</strong></li>
+    </ul>
+</section>
+ 
+
+        <!-- Contact Section --> 
+       <!-- Contact Section -->
+<section id="contacts">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! For questions, feedback, or recipe suggestions, reach out at <a href="mailto:support@yumyard.com">support@yumyard.com</a> <img src="https://img.icons8.com/material-outlined/24/000000/email-open.png" alt="Email Icon" style="vertical-align: middle;"/>.</p>
+    
+    <h3>Follow Us</h3>
+    <p>Stay connected for the latest recipes and tips:</p>
+    <ul>
+        <li><a href="#" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png" alt="Facebook Icon" style="vertical-align: middle;"/> Facebook</a></li>
+        <li><a href="#" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png" alt="Instagram Icon" style="vertical-align: middle;"/> Instagram</a></li>
+        <li><a href="#" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/twitter-squared.png" alt="Twitter Icon" style="vertical-align: middle;"/> Twitter</a></li>
+    </ul>
+
+    <p>Want to share a recipe? Submit it through our website! Thank you for being part of YumYard—happy cooking!</p>
+</section>
+
+    </div> 
+
+    <!-- Footer Section --> 
+    <footer> 
+        <p style="font-size: 14px;">Connect with us:</p> 
+        <a href="https://www.facebook.com/yumyard" target="_blank"><img src="https://img.freepik.com/premium-psd/facebook-transparent-icon-psd_1073073-360.jpg" alt="Facebook"> Facebook</a> 
+        <a href="https://www.instagram.com/yumyard" target="_blank"><img src="https://img.freepik.com/premium-photo/instagram-social-media-logo-transparent-background_1020200-19825.jpg" alt="Instagram"> Instagram</a> 
+        <a href="mailto:contact@yumyard.com"><img src="https://banner2.cleanpng.com/20240403/ras/transparent-gmail-icon-google-mail-logo-with-vibrant-colors-and-m660d4ec2bd9db0.46699070.webp" alt="Email"> Email</a> 
+    </footer>
+    
+
+    <!-- Sign-Up Modal --> 
+    <div id="signupModal" class="modal"> 
+        <div class="modal-content"> 
+            <span class="close" onclick="closeSignupModal()">&times;</span> 
+            <h2>Sign Up for YumYard</h2> 
+            <form action="home.html" method="POST"> 
+                <label for="name">Name:</label><br> 
+                <input type="text" id="name" name="name" required><br> 
+
+                <label for="email">Email:</label><br> 
+                <input type="email" id="email" name="email" required><br> 
+
+                <label for="password">Password:</label><br> 
+                <input type="password" id="password" name="password" required><br> 
+
+                <input type="submit" value="Sign Up"> 
+            </form> 
+        </div> 
+    </div> 
+
+    <script> 
+        // Function to open the sign-up modal 
+        function openSignupModal() { 
+            document.getElementById('signupModal').style.display = 'flex'; 
+        } 
+
+        // Function to close the sign-up modal 
+        function closeSignupModal() { 
+            document.getElementById('signupModal').style.display = 'none'; 
+        } 
+
+        // Close modal if user clicks outside of it 
+        window.onclick = function(event) { 
+            var modal = document.getElementById('signupModal'); 
+            if (event.target == modal) { 
+                modal.style.display = 'none'; 
+            } 
+        } 
+    </script> 
+</body> 
+</html>

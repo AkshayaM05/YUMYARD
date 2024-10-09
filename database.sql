@@ -1,0 +1,37 @@
+CREATE DATABASE yumyard;
+
+USE yumyard;
+
+CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE recipes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    recipe_name VARCHAR(255) NOT NULL,
+    ingredients TEXT NOT NULL,
+    steps TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE ratings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    recipe_id INT NOT NULL,
+    rating INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (recipe_id) REFERENCES recipes(id)
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+

@@ -1,0 +1,93 @@
+/* addingrecipe.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color:black;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.right-corner-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+form {
+    background-color:white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px ;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="file"] {
+    margin-bottom: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.center {
+    text-align: center;
+}

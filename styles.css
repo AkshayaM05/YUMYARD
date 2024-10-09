@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/e1/2a/8e/e12a8ea15dc3cf40777ea8d7b01142d2.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Set link color to white */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+header {
+    background-color:black; /* Set background color to black to see white text clearly */
+    text-align: center;
+    padding: 15px;
+}
+form {
+    margin: 20px;
+   
+}
+
+/* Change text color for labels */
+label {
+    color:white; /* Red color for labels */
+}
+input[type="submit"] {
+    color: #ffffff; /* White color for submit button text */
+    background-color: #007bff; /* Blue background color for submit button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.right-corner-image {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    width: 150px;
+}
+.footer {
+    background-color:black ;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+   
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

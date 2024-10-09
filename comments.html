@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YumYard-comments</title>
+    <link rel="stylesheet" href="comments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="cont">
+            
+        </div>
+        <body>
+            <nav>
+             
+            <ul>
+                <li><a><i class="fas fa-home"></i>Home</a></li>
+                <li><a ><i class="fas fa-utensils"></i>Recipes</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li><a href="search"><i class="fas fa-search"></i>Search</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+            </ul>
+        </nav>
+        <img src="logo.png" alt="Image" class="right-corner-image">
+    </header><center>
+    <h1>Leave Your Comment!!!</h1></center>
+    <div class="container">
+        <form action="comments_submit.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="comments_section">
+        <?php include 'display_comments.php'; ?>
+    </div>
+</body>
+</html>
